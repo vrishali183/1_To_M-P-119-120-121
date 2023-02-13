@@ -28,7 +28,7 @@ classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models
       
   function check()
   {
-    img = document.getElementById('captured_image');
+    img = document.getElementById('');//captured_image
     classifier.classify(img, gotResult);
   }
 
@@ -47,17 +47,17 @@ function gotResult(error, results) {
     if(gesture == "amazing")
     {
       toSpeak = "This is looking amazing";
-      document.getElementById("result_object_gesture_icon").innerHTML = "&#128076;";
+      document.getElementById("").innerHTML = "&#128076;"; //result_object_gesture_icon
     }
     else if(gesture == "best")
     {
       toSpeak = "All the best";
-      document.getElementById("result_object_gesture_icon").innerHTML = "&#128077;";
+      document.getElementById("").innerHTML = "&#128077;";//result_object_gesture_icon
     }
     else if(gesture == "victory")
     {
       toSpeak = "That was the marvelous victory";
-      document.getElementById("result_object_gesture_icon").innerHTML = "&#9996;";
+      document.getElementById("").innerHTML = "&#9996;";//result_object_gesture_icon
     }
 
     speak();
